@@ -17,19 +17,19 @@ public class Baloon extends Aircraft implements Flyable {
 				this.coordinates.setHeight(this.coordinates.getHeight() + 4);
 				if (this.coordinates.getHeight() > 100)
 					this.coordinates.setLongitude(100);
-				Coordinates.writer.println("Baloon#" + this.name + "(" + this.id + "): Sun time!");
+				Coordinates.writer.println("Baloon#" + this.name + "(" + this.id + "): the Sun shines!");
 				break;
 			case "RAIN":
 				this.coordinates.setHeight(this.coordinates.getHeight() - 5);
-				Coordinates.writer.println("Baloon#" + this.name + "(" + this.id + "): Rain time!");
+				Coordinates.writer.println("Baloon#" + this.name + "(" + this.id + "): it do be raining");
 				break;
 			case "FOG":
 				this.coordinates.setHeight(this.coordinates.getHeight() - 2);
-				Coordinates.writer.println("Baloon#" + this.name + "(" + this.id + "): Fog time!");
+				Coordinates.writer.println("Baloon#" + this.name + "(" + this.id + "): the fog is here");
 				break;
 			case "SNOW":
 				this.coordinates.setHeight(this.coordinates.getHeight() - 15);
-				Coordinates.writer.println("Baloon#" + this.name + "(" + this.id + "): Snow Time!");
+				Coordinates.writer.println("Baloon#" + this.name + "(" + this.id + "): there is snow here");
 				break;
 			default:
 				Coordinates.writer.println("Baloon#" + this.name + "(" + this.id + "): cannot contact weather tower");

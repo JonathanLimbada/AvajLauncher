@@ -4,11 +4,6 @@ import vehicles.*;
 import java.util.*;
 
 public class Simulator {
-    public static class NoArgumentException extends Exception {
-        NoArgumentException(String message) {
-            super(message);
-        }
-    }
 
     private static List<Flyable> flyables = new ArrayList<>();
 

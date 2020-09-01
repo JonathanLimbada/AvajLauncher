@@ -17,19 +17,19 @@ public class Helicopter extends Aircraft implements Flyable {
 				this.coordinates.setHeight(this.coordinates.getHeight() + 2);
 				if (this.coordinates.getHeight() > 100)
 					this.coordinates.setHeight(100);
-				Coordinates.writer.println("Helicopter#" + this.name + "(" + this.id + "): sun time");
+				Coordinates.writer.println("Helicopter#" + this.name + "(" + this.id + "): the SUN is whack af, I'm hot");
 				break;
 			case "RAIN":
 				this.coordinates.setLongitude(this.coordinates.getLongitude() + 5);
-				Coordinates.writer.println("Helicopter#" + this.name + "(" + this.id + "): rain time");
+				Coordinates.writer.println("Helicopter#" + this.name + "(" + this.id + "): the RAIN is whack af, I'm wet");
 				break;
 			case "FOG":
 				this.coordinates.setLongitude(this.coordinates.getLongitude() + 1);
-				Coordinates.writer.println("Helicopter#" + this.name + "(" + this.id + "): fog time");
+				Coordinates.writer.println("Helicopter#" + this.name + "(" + this.id + "): the FOG is whack af, I can't see");
 				break;
 			case "SNOW":
 				this.coordinates.setHeight(this.coordinates.getHeight() - 12);
-				Coordinates.writer.println("Helicopter#" + this.name + "(" + this.id + "): snow time");
+				Coordinates.writer.println("Helicopter#" + this.name + "(" + this.id + "): the SNOW is whack af, I'm cold");
 			break;
 			default:
 			Coordinates.writer.println("Helicopter#" + this.name + "(" + this.id + "): cannot contact weather tower");

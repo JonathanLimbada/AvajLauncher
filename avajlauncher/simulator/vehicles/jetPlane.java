@@ -16,19 +16,19 @@ public class jetPlane extends Aircraft implements Flyable {
 				this.coordinates.setHeight(this.coordinates.getHeight() + 2);
 				if (this.coordinates.getHeight() > 100)
 					this.coordinates.setHeight(100);
-				Coordinates.writer.println("JetPlane#" + this.name + "(" + this.id + "): Sun time");
+				Coordinates.writer.println("JetPlane#" + this.name + "(" + this.id + "): SUN time!");
 				break;
 			case "RAIN":
 				this.coordinates.setLatitude(this.coordinates.getLatitude() + 5);
-				Coordinates.writer.println("JetPlane#" + this.name + "(" + this.id + "): Rain time");
+				Coordinates.writer.println("JetPlane#" + this.name + "(" + this.id + "): RAIN time!");
 				break;
 			case "FOG":
 				this.coordinates.setLatitude(this.coordinates.getLatitude() + 1);
-				Coordinates.writer.println("JetPlane#" + this.name + "(" + this.id + "): Fog time");
+				Coordinates.writer.println("JetPlane#" + this.name + "(" + this.id + "): FOG time!");
 				break;
 			case "SNOW":
 				this.coordinates.setHeight(this.coordinates.getHeight() - 12);
-				Coordinates.writer.println("JetPlane#" + this.name + "(" + this.id + "): Snow time!");
+				Coordinates.writer.println("JetPlane#" + this.name + "(" + this.id + "): SNOW time!");
 				break;
 			default:
 			Coordinates.writer.println("JetPlane#" + this.name + "(" + this.id + "): cannot contact weather tower");
