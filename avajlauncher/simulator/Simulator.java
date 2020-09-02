@@ -24,6 +24,11 @@ public class Simulator {
             }
             int c = 0;
             while ((line = reader.readLine()) != null) {
+                String[] tmp = line.split(" ");
+                if (tmp.length != 5) {
+                    System.err.println("Error : Aircraft Coordinates are incorrect");
+                    System.exit(1);
+                }
                 Flyable flyable = AircraftFactory.newAircraft(
                         line.split(" ")[0], line.split(" ")[1],
                         Integer.parseInt(line.split(" ")[2]),
